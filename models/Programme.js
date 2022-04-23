@@ -44,6 +44,33 @@ const ProgrammeSchema = new mongoose.Schema({
                 type: String,
                 required: false,
             },
+            WorkoutLevel: {
+                type: String,
+                required: false
+            },
+            Location: {
+                type: String,
+                required: false
+            },
+            Goal: {
+                type: String,
+                required: false
+            },
+            WorkoutMainMuscleWorked: {
+                type: String,
+                required: false
+            },
+            WorkoutOtherMuscleWorked: {
+                type: String,
+            },
+            Gender: {
+                type: String,
+                required: false
+            },
+            Date: {
+                type: Date,
+                default: Date.now(),
+            },
             Exercise:
                 [
                     {

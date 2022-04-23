@@ -43,7 +43,7 @@ router.post('/', [
 
 
         try {
-            let programme = await Programme.findOne({ WorkoutTitle });
+            let programme = await Programme.findOne({ ProgrammeTitle });
 
             if (programme) {
 
